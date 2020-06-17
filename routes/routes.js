@@ -1,6 +1,6 @@
 module.exports = function (app, db) {
     app.post('/notes', (req, res) => {
-        console.log(res)
-        res.send('fuck')
+        res.send({ title: 'fuck', body: 'fuck you' })
     });
 };
+
